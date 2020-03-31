@@ -19,4 +19,39 @@ public class MyPriorityQueue {
         size = 0;
     }
 
+    /*
+    helper method : enQueue
+     */
+    public void enqueue(Node addData) {
+        if (front == null) {
+            rear = addData;
+            front = addData;
+            size++;
+        } else {
+            if (addData.getData().getRollNumber() >= this.rear.getData().getRollNumber()) {
+                rear.setNext(addData);
+                rear = addData;
+                size++;
+            } else if (addData.getData().getRollNumber() <= this.front.getData().getRollNumber()) {
+                addData.setNext(this.front);
+                this.front = addData;
+                size++;
+            } else {
+                Node temp = this.front;
+                Node tempPrevious = this.front;
+                while (temp.getNext() != null) {
+                    if (temp.getData().getRollNumber() > addData.getData().getRollNumber()) {
+                        break;
+                    }
+                    tempPrevious = temp;
+                    temp = temp.getNext();
+                }
+                tempPrevious.setNext(addData);
+                addData.setNext(temp);
+                size++;
+
+            }
+        }
+    }
+
 }
