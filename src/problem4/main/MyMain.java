@@ -30,6 +30,6 @@ public class MyMain {
         /*
          *       Printing the Queue
          */
-
+        mq.getPreSucc();
     }
 }
