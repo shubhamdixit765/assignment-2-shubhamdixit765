@@ -24,5 +24,7 @@ public class MyMain {
         myPriorityQueue.enqueue(new Node(new Student(50, "VD ")));
         myPriorityQueue.enqueue(new Node(new Student(11, "Jio kola")));
         myPriorityQueue.enqueue(new Node(new Student(55, " DBC ")));
+
+        myPriorityQueue.printQueue();
     }
 }
