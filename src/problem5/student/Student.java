@@ -17,4 +17,12 @@ public class Student {
         this.rollNumber = rollNumber;
         Name = name;
     }
+
+    public Student(int rollNumber, String name, int backLogCounter, int appearingCounter) {
+        this.rollNumber = rollNumber;
+        Name = name;
+        this.backLogCounter = backLogCounter;
+        this.appearingCounter = appearingCounter;
+    }
+
 }
