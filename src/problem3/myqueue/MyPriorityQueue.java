@@ -7,4 +7,7 @@
 package problem3.myqueue;
 
 public class MyPriorityQueue {
+    private Node rear;
+    private Node front;
+    private int size;
 }
