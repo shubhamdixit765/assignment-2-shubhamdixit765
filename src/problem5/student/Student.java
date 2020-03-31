@@ -40,5 +40,11 @@ public class Student {
         return appearingCounter;
     }
 
-
+    @Override
+    public String toString() {
+        return "Student{" +
+                "rollNumber=" + rollNumber +
+                ", Name='" + Name + '\'' +
+                '}';
+    }
 }
