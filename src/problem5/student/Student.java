@@ -47,4 +47,13 @@ public class Student {
                 ", Name='" + Name + '\'' +
                 '}';
     }
+
+    public String toStrings() {
+        return "Student{" +
+                "rollNumber=" + rollNumber +
+                ", Name='" + Name + '\'' +
+                ", backLogCounter=" + backLogCounter +
+                ", appearingCounter=" + appearingCounter +
+                '}';
+    }
 }
