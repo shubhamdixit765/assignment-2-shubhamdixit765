@@ -6,5 +6,11 @@
  */
 package problem5.circularqueue;
 //to implement circular queue
+
+
 public class MyCircularQueue {
+    private Node front;
+    private int size;
+
+
 }
