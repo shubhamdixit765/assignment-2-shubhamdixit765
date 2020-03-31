@@ -25,4 +25,20 @@ public class Student {
         this.appearingCounter = appearingCounter;
     }
 
+    // getter & setter methods
+    public int getRollNumber() {
+        return rollNumber;
+    }
+
+
+    public int getBackLogCounter() {
+        return backLogCounter;
+    }
+
+
+    public int getAppearingCounter() {
+        return appearingCounter;
+    }
+
+
 }
