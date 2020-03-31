@@ -6,5 +6,13 @@
  */
 package problem1.mybst;
 // to implement BinarySearchTree
+
+
 public class MyBinarySearchTree {
+
+    public static StringBuilder preOrderString;
+    public TreeNode root;
+    private int count = 0;
+
+
 }
