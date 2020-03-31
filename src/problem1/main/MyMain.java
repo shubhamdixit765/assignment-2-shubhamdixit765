@@ -30,7 +30,10 @@ public class MyMain {
             }
             i--;
         }
-
+        System.out.println("All Left-children are :");
+        tree.printLeftNode();
+        System.out.println("Number of nodes doesn't have left child :");
+        tree.countNotLeft();
 
     }
 }
